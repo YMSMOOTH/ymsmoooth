@@ -10,6 +10,13 @@
   <meta name="author" content="YmSmooth">
   <link rel="canonical" href="https://www.ymsmooth.fr/">
 
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.ymsmooth.fr/">
   <meta property="og:title" content="Distributeur automatique smoothies frais — Vienne (86)">
@@ -156,13 +163,14 @@
       display: flex; align-items: center; justify-content: space-between;
     }
     .nav-logo {
-      font-family: 'DM Serif Display', serif;
-      font-size: 0.95rem;
-      color: var(--noir);
+      display: flex; align-items: center;
       text-decoration: none;
-      letter-spacing: -0.01em;
     }
-    .nav-logo span { color: var(--vert); }
+    .nav-logo img {
+      height: 42px;
+      width: auto;
+      display: block;
+    }
     .nav-right {
       font-size: 0.75rem;
       color: var(--gris);
@@ -482,8 +490,7 @@
 
     /* ══ NAV ══ */
     nav { transition:box-shadow .3s; }
-    .nav-logo { transition:color .2s; }
-    .nav-logo:hover span { color:var(--miel); }
+
 
     /* ══ HERO ══ */
     .hero-tag {
@@ -609,7 +616,7 @@
 <div id="cursor"></div>
 
 <nav>
-  <a href="#" class="nav-logo">YmSmooth <span>Distribution</span></a>
+  <a href="#" class="nav-logo"><img src="logo.png" alt="YmSmooth"></a>
   <div class="nav-right">Vienne · 86</div>
 </nav>
 
