@@ -167,16 +167,20 @@
       text-decoration: none;
     }
     .nav-logo img {
-      height: 42px;
+      height: 18px;
       width: auto;
       display: block;
     }
     .nav-right {
-      font-size: 0.75rem;
+      font-size: 0.68rem;
       color: var(--gris);
       font-weight: 500;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
       text-transform: uppercase;
+      white-space: nowrap;
+    }
+    @media (max-width: 900px) {
+      .nav-right { display: none; }
     }
 
     /* ── HERO ── */
@@ -617,12 +621,12 @@
 
 <nav>
   <a href="#" class="nav-logo"><img src="wordmark.png" alt="YMSMOOTH."></a>
-  <div class="nav-right">Vienne · 86</div>
+  <div class="nav-right">Distributeur automatique de smoothies &amp; salades de fruits</div>
 </nav>
 
 <!-- ── HERO ── -->
 <section class="hero">
-  <div class="hero-tag">Exploitant spécialisé · Département 86</div>
+  <div class="hero-tag">Exploitant spécialisé de la Vienne (86)</div>
   <h1 class="reveal">Des smoothies frais<br>dans <em>vos locaux.</em></h1>
   <p class="hero-sub reveal reveal-d1">
     YmSmooth installe et exploite des distributeurs automatiques de <strong>smoothies frais et produits healthy</strong> dans les entreprises et lieux publics de la Vienne. On s'occupe de tout.
